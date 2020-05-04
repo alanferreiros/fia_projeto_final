@@ -26,6 +26,12 @@ As análises estão divididas em 3 notebooks:
 3. "Grupo1_exploratoria_part2": Continuação do "part1". Da mesma forma, se fizer um "Run All" deste notebook ele executa o "part1" automaticamente.
 (precisei criar 2 notebooks para a análise exploratória porque o controle de versão do Databricks começou a falhar devido ao tamanho)
 
+Nota 1: Adicionei uma flag "VERBOSE" no início dos notebooks Grupo1_setup e Grupo1_exploratoria_part1. A idéia é colocar True somente se desejar ver os resultados destes notebooks. Caso o notebook seja chamado por outro (através de "%run"), recomendo colocar como "False" para reduzir drasticamente o tempo de execução.
+A ideia é que VERBOSE=False mantém somente as transformações, e não as ações, evitando assim principalmente os "count()" e "display()" dos notebooks intermediários.
+
+Nota 2: Em alguns momentos tive problema de "Timeout" no databricks em alguns comandos envolvendo ações. Nestes casos, comandei para continuar a execução dali em diante e funcionou normalmente.
+
+
 ========= CONTEÚDO =========
 
 "Grupo1_setup"
@@ -114,7 +120,7 @@ O resultado de cada uma das etapas acima foi o dataframe df_analysis_v6, que foi
 --- Quantitative variables
      - Lista de variáveis quantitativas
      - Levantamento de medidas de posição
-     - Box plots
+     - Box Plots and Histograms
        Nota: foram constatados muitos outliers. Porém, no fim se demonstra que eles podem ser explicados ao fazer análises bi-variadas.
      - Levantamento de medidas de dispersão
      - Análise de distribuição de valores de datas.
