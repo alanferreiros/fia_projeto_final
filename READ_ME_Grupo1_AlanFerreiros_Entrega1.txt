@@ -105,14 +105,20 @@ O resultado de cada uma das etapas acima foi o dataframe df_analysis_v6, que foi
      - Verificação de que não existem mais valores nuloes entre elas
      - Frequências de cada uma delas
      - Análise da influência entre estado de entrega/envio e o tempo de entrega
+     Nota: Muitas das variáveis categóricas possuem milhares de valores possíveis, por conta disso as frequências em geral foram mostrada em tabelas. Quando possível, foram montados gráficos de barra.
+     
 ---- Check if orders are concentrated in a few categories
       Apesar de existirem milhares de categorias, talvez os pedidos se concentrem em apenas algumas delas.
       Este estudo verifica estas características e sugere tratamentos posteriores e substituição por outros valores (feature engineering)
 
 --- Quantitative variables
-     Nota: Muitas das variáveis categóricas possuem milhares de valores possíveis
-     
-     
+     - Lista de variáveis quantitativas
+     - Levantamento de medidas de posição
+     - Box plots
+       Nota: foram constatados muitos outliers. Porém, no fim se demonstra que eles podem ser explicados ao fazer análises bi-variadas.
+     - Levantamento de medidas de dispersão
+     - Análise de distribuição de valores de datas.
+     - Análise da distribuição de clientes e vendedores (latitude e longitude)
      
      
      
