@@ -1,0 +1,1 @@
+[][{"combination": {"activation": "identity", "alpha": 1e-09, "hidden_layer_sizes": [1], "max_iter": 100000000.0}, "rmse_train": 7.3543599261299315, "rmse_test": 7.385796496160187, "score_train": 0.2250686709171993, "score_test": 0.2196096736569204, "elapsed_time": 0.027022361755371094}]
